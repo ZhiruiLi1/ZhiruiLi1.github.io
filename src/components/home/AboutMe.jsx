@@ -7,7 +7,7 @@ const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
 );
 
-const AboutMe = ({ heading, message, link, imgSize, resume }) => {
+const AboutMe = ({ heading, message, link, imgSize, resume, education}) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
   // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
@@ -30,6 +30,17 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
       setProfilePicUrl(link);
     }
   }, [link]);
+
+  function showEducation() {
+    // Toggles Education block
+    var x = document.getElementById("education-box");
+    if (x.style.display === 'block') {
+      x.style.display = 'none';
+    }
+    else {
+      x.style.display = 'block';
+    }
+  }
 
 
 
@@ -62,8 +73,19 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
               >
                 Resume
               </a>
+              <button
+                className="btn btn-outline-dark btn-lg"
+                aria-label="Education"
+                style={{width: 120, marginLeft: 10, marginRight: 10}}
+                onClick={showEducation}
+              >
+                Education
+              </button>
             </p>
           )}
+          <div id="education-box" style={{display: 'none'}}>
+            <p className="lead text-left">{education}</p>
+          </div>
         </div>
       </div>
     </Jumbotron>

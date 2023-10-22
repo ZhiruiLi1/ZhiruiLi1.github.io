@@ -8,7 +8,7 @@ import {
   leadership,
   skills,
   getInTouch,
-  experiences
+  // experiences
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -20,8 +20,11 @@ import Skills from "./components/home/Skills";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
+import { selectedExperiences } from "./editable-stuff/config.js";
+import SelectedExperiences from "./components/home/SelectedExperiences";
 
-import Experience from "./components/home/Experience";
+
+// import Experience from "./components/home/Experience";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -40,13 +43,12 @@ const Home = React.forwardRef((props, ref) => {
           link={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
+          education={about.education}
         />
       )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      }
+
+      {selectedExperiences.show && <SelectedExperiences data={selectedExperiences} />}  
+      
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -67,7 +69,6 @@ const Home = React.forwardRef((props, ref) => {
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
         />
       )}
       
