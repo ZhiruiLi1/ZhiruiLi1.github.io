@@ -93,7 +93,7 @@ const selectedExperiences = {
     },
     {
       title: 'Interactive Shiny App for RNA-seq Data Analysis',
-      description: 'I developed an interactive Shiny app in RStudio that automatically performed batch correction, preprocessed the RNA-seq dataset, and conducted Limma-Voom for differential expression analysis. Subsequently, I converted the entire application to a Docker image, ensuring the consistency and reproducibility of our research.',
+      description: 'I developed an Shiny app in RStudio that automatically performed batch correction, preprocessed the RNA-seq dataset, and conducted Limma-Voom for differential expression analysis, resulting in an interactive volcano plot and heatmap. Subsequently, I converted the entire application to a Docker image, ensuring the consistency and reproducibility of our research.',
       image: require('/Users/justinli/Desktop/home/src/assets/img/Shiny.png'),
     },
     {
