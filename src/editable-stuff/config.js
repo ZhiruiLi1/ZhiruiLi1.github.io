@@ -81,6 +81,7 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 
 // Selected Experiences:
+
 const selectedExperiences = {
   show: true,
   heading: "Selected Research and Projects",
@@ -96,14 +97,24 @@ const selectedExperiences = {
       image: require('/Users/justinli/Desktop/home/src/assets/img/Shiny.png'),
     },
     {
-      title: 'Ukrainian War Sentiment Analysis + Topic Modeling',
-      description: 'We developed a bidirectional LSTM model for sentiment analysis, paired with the Latent Dirichlet Allocation, to discern latent topics within English-language Tweets to the Ukrainian-Russian conflict. Our visualizations further illustrate the evolution of emotions over time. Combining both methods, we unveil how controversies can influence emotions.',
-      image: require('/Users/justinli/Desktop/home/src/assets/img/poster.png'),
+      title: 'Single Cell Segmentation',
+      description: 'I developed a state-of-the-art convolutional neural network (CNN) in Python featuring the Gumbel-Softmax activation function, specifically for advanced single-cell segmentation. This CNN, coupled with soft Gumbel and binary cross-entropy loss, demonstrated superior performance when benchmarked against other models, highlighting its effectiveness in precise cell segmentation tasks.',
+      image: require('/Users/justinli/Desktop/home/src/assets/img/Segmentation.png'),
     },
     {
       title: 'Diamond Clarity Classifier',
       description: 'We designed Convolutional Neural Networks in Python, classifying diamond images into six clarity labels. By incorporating advanced image processing techniques such as the Harris Corner Detector, we removed image backgrounds and pinpointed intersections, significantly enhancing classification accuracy.',
       image: require('/Users/justinli/Desktop/home/src/assets/img/CV.png'),
+    },
+    {
+      title: 'Automating Data Preprocessing & Visualizations for Oceanographic Analysis',
+      description: 'I engineered a comprehensive pipeline in Python that automates the preprocessing of raw buoy data into structured, analyzable datasets and seamlessly integrates automatic visualizations. This robust system adeptly compiles, visualizes, and transforms extensive oceanographic data from 2017 to 2022, converting it into the standardized NetCDF format. This approach streamlines the analysis process and enhances the efficiency of data storage and accessibility. Example visualizations are shown.',
+      image: require('/Users/justinli/Desktop/home/src/assets/img/Grid.png'),
+    },
+    {
+      title: 'Ukrainian War Sentiment Analysis + Topic Modeling',
+      description: 'We developed a bidirectional LSTM model for sentiment analysis, paired with the Latent Dirichlet Allocation, to discern latent topics within English-language Tweets to the Ukrainian-Russian conflict. Our visualizations further illustrate the evolution of emotions over time. Combining both methods, we unveil how controversies can influence emotions.',
+      image: require('/Users/justinli/Desktop/home/src/assets/img/poster.png'),
     },
   ],
 };
